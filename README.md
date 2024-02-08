@@ -16,6 +16,7 @@ Atualmente, este pacote oferece um validador para CPFs brasileiros. Para utiliza
 
 ```typescript
 import { IsCPF } from "class-validator-br";
+import { validate } from "class-validator";
 
 class Usuario {
   @IsCPF()
@@ -24,6 +25,14 @@ class Usuario {
 
 const usuario = new Usuario();
 usuario.cpf = "47471652071"; // CPF válido
+
+validate(usuario).then((errors) => {
+  if (errors.length > 0) {
+    console.log("validation failed. errors: ", errors);
+  } else {
+    console.log("validation succeed");
+  }
+});
 ```
 
 ## Futuras Adições
