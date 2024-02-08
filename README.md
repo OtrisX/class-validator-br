@@ -1,4 +1,3 @@
-````markdown
 # Class Validator BR
 
 Conjunto de validadores para dados brasileiros utilizando a biblioteca Class Validator.
@@ -30,4 +29,3 @@ usuario.cpf = "47471652071"; // CPF válido
 ## Futuras Adições
 
 Estou trabalhando para adicionar mais validadores para outros tipos de dados brasileiros, como RG, CNPJ, CEP, entre outros. Fique atento às próximas versões para mais funcionalidades!
-````
