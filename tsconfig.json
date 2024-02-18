@@ -8,5 +8,5 @@
     "declaration": true,
     "experimentalDecorators": true
   },
-  "include": ["src"]
+  "include": ["src", "tests/IsCPF.test.ts"]
 }
