@@ -40,7 +40,7 @@ function secondDigitValidator(cpf: string): boolean {
 export function IsCPF() {
   return function (target: Object, propertyName: string) {
     registerDecorator({
-      name: "isCPF",
+      name: "IsCPF",
       target: target.constructor,
       constraints: [],
       propertyName: propertyName,
@@ -62,12 +62,12 @@ export function IsCPF() {
           }
 
           if (!firstDigitValidator(value)) {
-            args.constraints.push("O primeiro dígito verificador é inválido");
+            args.constraints.push("CPF inválido");
             return false;
           }
 
           if (!secondDigitValidator(value)) {
-            args.constraints.push("O segundo dígito verificador é inválido");
+            args.constraints.push("CPF inválido");
             return false;
           }
 
