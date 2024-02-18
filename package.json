@@ -27,7 +27,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OtrisX/class-validator-br"
+    "url": "git+https://github.com/OtrisX/class-validator-br.git"
   },
   "dependencies": {
     "@babel/preset-env": "^7.23.9",
